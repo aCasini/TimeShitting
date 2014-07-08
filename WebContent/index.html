@@ -1,0 +1,50 @@
+<html>
+<head>
+<link href="./css/style.css" />
+<script type="text/javascript" src="./js/chrono.js"></script>
+<script type="text/javascript" src="./js/Chart.min.js"></script>
+</head>
+<body>
+	<h1 id="title" style="color: maroon; text-align: center;">Time Shitting</h1>
+
+	<fieldset id="main" style="width: auto;">
+		<fieldset id="mainLeft" style="width: 33%; float: left;">
+			<div id="output"></div>
+<!-- 			<div id="dResult" style="margin-top: 15px;"> -->
+<!-- 				Daily Result: <input /> -->
+<!-- 			</div> -->
+<!-- 			<div id="startBtn" style="margin-top: 15px;"> -->
+<!-- 				<button id="start" onclick="alert('start chrono')">Go -->
+<!-- 					Shitting</button> -->
+<!-- 			</div> -->
+		</fieldset>
+		<fieldset id="mainRight" style="width: 60%; float: right;">
+
+			<input id="mostra_cronometro" style="text-align: center;"
+				value="00:00:00:0" disabled="disabled" />
+
+			<button onclick="javascript:avvia();" />
+			Start Shitting Time
+			</button>
+			&nbsp;
+			<button onclick="javascript:ferma();" />
+			STOP
+			</button>
+			&nbsp;
+			<button onclick="javascript:azzera();" />
+			Clear
+			</button>
+			<br> <br>
+
+<!-- 			<button onclick="javascript:intertempo();" /> -->
+<!-- 			Intertempo! -->
+<!-- 			</button> -->
+
+			<div id="intertempi"></div>
+		</fieldset>
+	</fieldset>
+	<fieldset style="width: auto;">
+			<canvas id="canvas" height="100" width="auto"></canvas>
+	</fieldset>
+</body>
+</html>
